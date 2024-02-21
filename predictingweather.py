@@ -1,8 +1,3 @@
-# Lab 4
-# Replace "WRITE CODE HERE" with your python code and remove the "pass" statement
-
-
-# ----------------- Question 1 -----------------
 def analyze_climate_data(filename: str) -> (int, int, float, float, float, float):
     total_days = 0 
     days_with_precipitation_over_0 = 0 
@@ -41,11 +36,10 @@ def analyze_climate_data(filename: str) -> (int, int, float, float, float, float
     return (total_days, days_with_precipitation_over_0, lowest_temp, highest_temp, mean_humidity, mean_precipitation)
 
 
-# invoke the function with relevant args of your choice
-# WRITE CODE HERE
 
 
-# ----------------- Question 2 -----------------
+
+
 def rainfall_prediction(filename: str) -> (int, int):
     predicted_rainy_days = 0
     correct_predictions = 0
@@ -78,11 +72,8 @@ def rainfall_prediction(filename: str) -> (int, int):
     return predicted_rainy_days, correct_predictions
 
 
-# invoke the function with relevant args of your choice
-# WRITE CODE HERE
 
 
-# ----------------- Question 3 -----------------
 def export_weather_predictions(source_file: str, destination_file: str) -> None:
 
     with open(source_file, 'r') as src_file:
@@ -109,5 +100,4 @@ def export_weather_predictions(source_file: str, destination_file: str) -> None:
                 dest_file.write(f"{min_temp},{max_temp},{humidity},{precipitation},{forecast}\n")
 
 
-# invoke the function with relevant args of your choice
-# WRITE CODE HERE
+
